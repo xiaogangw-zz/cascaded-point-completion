@@ -6,9 +6,7 @@ This is the TensorFlow implementation for the paper "Cascaded Refinement Network
 python version: python-3.5;  cuda version: cuda-10;  TensorFlow version: tensorflow-1.13
 
 ## Datasets
-[Our dataset](https://drive.google.com/file/d/1MzVZLhXOgfaLZjn1jDrwuiCB-XCfaB-w/view?usp=sharing)
-
-PCN's dataset: Please download it from [PCN](https://github.com/wentaoyuan/pcn)
+[Our dataset](https://drive.google.com/file/d/1MzVZLhXOgfaLZjn1jDrwuiCB-XCfaB-w/view?usp=sharing)   [PCN's dataset](https://github.com/wentaoyuan/pcn)  [TopNet's dataset](https://github.com/lynetcha/completion3d)
     
 ## Train the model
 To train the models: python train.py  
