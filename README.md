@@ -29,10 +29,11 @@ To evaluate models in different cases: python test.py
     --step_ratio: 2, 4, 8, 16 for different output resolutions.
     
 ## Citation
-@inproceedings{wang2020cascaded,  
-&nbsp;&nbsp;&nbsp;&nbsp;      author    = {Wang, Xiaogang and Ang Jr, Marcelo H and Lee, Gim Hee},  
+@inproceedings{Wang_2020_CVPR,  
+&nbsp;&nbsp;&nbsp;&nbsp;      author    = {Wang, Xiaogang and , Marcelo H. Ang Jr. and Lee, Gim Hee},  
 &nbsp;&nbsp;&nbsp;&nbsp;      title     = {Cascaded Refinement Network for Point Cloud Completion},  
-&nbsp;&nbsp;&nbsp;&nbsp;      booktitle = {Conference on Computer Vision and Pattern Recognition (CVPR)},  
+&nbsp;&nbsp;&nbsp;&nbsp;      booktitle = {IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},  
+&nbsp;&nbsp;&nbsp;&nbsp;      month     = {June},       
 &nbsp;&nbsp;&nbsp;&nbsp;      year      = {2020},  
 }
 
