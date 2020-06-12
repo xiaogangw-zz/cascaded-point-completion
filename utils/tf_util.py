@@ -83,10 +83,6 @@ def augment_cloud(Ps, args):
     for P in Ps:
         P[:,:3] = np.dot(P[:,:3], M.T)
         result.append(P)
-
-    if args.pc_augm_jitter:
-        sigma, clip = 0.01, 0.05  # https://github.com/charlesq34/pointnet/blob/master/provider.py#L74
-        result[0] = result[0] + np.clip(sigma * np.random.randn(*result[0].shape), -1 * clip, clip).astype(np.float32)
     return result
 
 def conv2d(inputs,
