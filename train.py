@@ -204,10 +204,10 @@ def train(args):
     train_D = D_optimizers.apply_gradients(grads_d, global_step=global_step)
 
     fine = tf.concat(fine_gpu, 0)
-    total_dis_loss = tf.reduce_mean(tf.stack(total_dis_loss_batch,0))
-    errG_loss = tf.reduce_mean(tf.stack(errG_loss_batch,0))
-    total_gen_loss = tf.reduce_mean(tf.stack(total_gen_loss_batch,0))
-    total_loss_rec = tf.reduce_mean(tf.stack(total_loss_rec_batch,0))
+    total_dis_loss = tf.reduce_mean(total_dis_loss_gpu)
+    errG_loss = tf.reduce_mean(errG_loss_gpu)
+    total_gen_loss = tf.reduce_mean(total_gen_loss_gpu)
+    total_loss_rec = tf.reduce_mean(total_loss_rec_gpu)
 
     dist1_eval, dist2_eval = tf_util.chamfer_distance(fine, gt_pl)
 
