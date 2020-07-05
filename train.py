@@ -20,8 +20,8 @@ parser = argparse.ArgumentParser()
 parser.add_argument('--model_type', default='cascaded_refinement_net')
 parser.add_argument('--lr_decay', default=False)
 parser.add_argument('--lr_decay_epochs', type=int, default=40)
-parser.add_argument('--h5_train',default='data/our_data/train_data.h5')  # data/shapenet/train_data_pcn.h5   train_data_topnet   train_val_topnet
-parser.add_argument('--h5_val',default='data/our_data/valid_data.h5')  # data/shapenet/test_data_pcn.h5   test_data_topnet
+parser.add_argument('--h5_train',default='data/our_data/train_data.h5')  
+parser.add_argument('--h5_val',default='data/our_data/valid_data.h5')  
 parser.add_argument('--num_gpus', default=1, type=int)
 parser.add_argument('--gpu', default='1')
 parser.add_argument('--allow_growth', action='store_false')
