@@ -37,7 +37,7 @@ parser.add_argument('--steps_per_eval', type=int, default=100)
 parser.add_argument('--steps_per_save', type=int, default=2000)
 
 parser.add_argument('--augment', action='store_true')
-parser.add_argument('--pc_augm_scale', default=0.0, type=float,help='Training augmentation: Uniformly random scaling in [1/scale, scale]') # 1.5
+parser.add_argument('--pc_augm_scale', default=0.0, type=float,help='Training augmentation: Uniformly random scaling in [1/scale, scale]') # 1.1
 parser.add_argument('--pc_augm_rot', default=0, type=int,help='Training augmentation: Bool, random rotation around z-axis')
 parser.add_argument('--pc_augm_mirror_prob', default=0.0, type=float,help='Training augmentation: Probability of mirroring about x or y axes')
 parser.add_argument('--pc_augm_jitter', default=0, type=int,help='Training augmentation: Bool, Gaussian jittering of all attributes')
